@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery.js"></script>
+    <script>    
+$(document).ready(function(){    
+    $("button").click(function(){    
+        //$("div>p").toggle();
+          $(".d1").toggle(2000);		
+    });    
+});    
+</script> 
+<style>
+body{
+float:left; text-align:center;
+}
+div{
+margin-top:15px;
+}
+ #div1{
+ width:100px;
+ height:100px;
+ background-color:red;
+ color:yellow;
+}
+#div2{
+ width:100px;
+ height:100px;
+ background-color:green;
+ color:yellow;
+}
+#div3{
+ width:100px;
+ height:100px;
+ background-color:blue;
+ color:yellow;
+}
+ 
+</style> 
+<script>
+$(document).ready(function(){
+   $("button").click(function(){
+      $("#div1").animate({left:'200px'});
+	
+   });
+});
+</script>  
+</head>    
+<body>  
+ <button> Click</button>
+<div id="div1"> div1</div> 
+<div id="div2"> div1</div> 
+<div id="div3"> div1</div> 
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <style type="text/css">
+    .active{
+        z-index:99;
+    }
+</style>
+<script src="jquery.js"></script>
+<script>
+    function slideSwitch() {
+        var $active = $('div#slideshow IMG.active');
+        var $next = $active.next();    
+
+        $next.addClass('active');
+
+        $active.removeClass('active');
+    }
+
+    $(function() {
+        setInterval( "slideSwitch()", 5000 );
+    });
+</script>
+</head>
+
+ <body>
+     
+<div id="slideshow">
+    <img src="img1.jpg" style="position:absolute;" class="active" />
+    <img src="img2.jpg" style="position:absolute;" />
+    <img src="img3.jpg" style="position:absolute;" />
+    <img src="img4.jpg" style="position:absolute;" />
+</div>
+		 
+       
+	
+ </body>
+ 
+ 
+</html>

@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <script src="jquery.js"></script>
+	
+	<script>
+	  $(document).ready(function(){
+	  var color= $('#list').val();
+	   $('body').css('background',color);
+	  $('#list').change(function(){
+	   var color= $('#list').val();
+	   $('body').css('background',color);
+	  });
+	  });
+	</script>
+  </head>
+  
+  <body>
+     <select id="list">
+	   <option value="yellow">Yellow</option>
+	   <option value="green">Green</option>
+	   <option value="blue">Blue</option>
+	 </select>
+  </body>
+</html>

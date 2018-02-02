@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery.js"></script>
+       
+<script>  
+$(document).ready(function(){ 
+          var result = ""; 
+      $("input").change(function(){
+	    if(result == "")
+		{
+		   result = $(this).val();
+		}
+		else
+		{
+		   result += "," +$(this).val();
+		}
+	    $("div").html(result);
+	  });
+});  
+</script>  
+</head>  
+<body>
+First name:  
+<input type="text" id="txtName"> <br />
+Last name:  
+<input type="text" id="lstName"><br>
+Course:
+<select id="course">
+   <option> Select</option>
+   <option> AngularJs</option>
+   <option value="Javascript"> javascript</option>
+   <option value="jquery"> jaquery</option>
+</select><br>
+<input type="radio" name="color" value="red">Red
+<input type="radio" name="color" value="green">Green
+<input type="radio" name="color" value="blue">Blue
+<br>
+Message:
+<input type="textarea" col="30">
+<br><br><br><br>
+result:
+<div style="border:1px solid red;width:100px;height:20px" ></div> 
+
+</body>  
+</html> 

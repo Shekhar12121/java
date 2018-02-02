@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery.js"></script>
+       
+<script>  
+$(document).ready(function(){ 
+          $("button").click(function(){
+		  
+		     var result= $("input").val();
+			 
+			 
+			 $("#div1").html(result);
+			 
+			 
+		  });
+});  
+</script>  
+</head>  
+<body>
+   gender: <input type="radio" name="gender" value="male">Male
+           <input type="radio" name="gender" value="female">Female
+		   <br><br>
+		   <button value="submit">Sbumit</button><br><br>
+		   <div id="div1"></div>
+</body>  
+</html> 
